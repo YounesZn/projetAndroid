@@ -53,6 +53,7 @@ public class MenuActivity extends AppCompatActivity {
                             Intent menuIntent = new Intent(MenuActivity.this, MapsActivity.class);
                             startActivity(menuIntent);
 
+
                             return true;
                         } else {
                             return false;
