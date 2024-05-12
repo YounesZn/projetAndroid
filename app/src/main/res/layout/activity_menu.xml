@@ -1,0 +1,44 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Menu Button -->
+    <Button
+        android:id="@+id/menuButton"
+        android:text="MENU"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp" />
+
+    <!-- RecyclerView for Menu Elements -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/menuRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/menuButton"
+        android:layout_marginTop="8dp"
+        android:visibility="gone" />
+
+    <!-- RecyclerView for List of Images -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/imageRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/menuRecyclerView"
+        android:layout_marginTop="16dp" />
+
+    <!-- Button to Capture Image -->
+    <Button
+        android:id="@+id/captureImageButton"
+        android:text="+"
+        android:textSize="24sp"
+        android:textColor="#FFFFFF"
+        android:background="@color/color1"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp" />
+
+</RelativeLayout>
